@@ -1,16 +1,47 @@
-# React + Vite
+# React Login / Posts Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a frontend application built with **React** as part of a technical code challenge.
+The application allows users to create, edit, and delete posts with a simple and clean interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Create new posts
+* Edit existing posts
+* Delete posts
+* Fake API interaction to simulate backend requests
+* Timestamp display for posts
+* Responsive and interactive UI
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+You can access the deployed application here:
 
-## Expanding the ESLint configuration
+🔗 https://react-login-hazel.vercel.app/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+* React
+* Vite
+* JavaScript
+* CSS
+
+## Installation
+
+To run the project locally:
+
+```bash
+git clone https://github.com/cazuza97/react-login.git
+cd react-login
+npm install
+npm run dev
+```
+
+The application will run at:
+
+```
+http://localhost:5173
+```
+
+## Notes
+
+This project was developed as part of a frontend technical test and demonstrates component structure, state management, and API interaction simulation.
