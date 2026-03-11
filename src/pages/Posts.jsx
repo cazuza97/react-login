@@ -18,19 +18,48 @@ function Posts() {
   const [editContent, setEditContent] = useState("");
 
   
-  const handleCreate = () => {
+  /*const handleCreate = () => {
     const newPost = {
       id: Date.now(), // id único
       title,
       content,
       username: localStorage.getItem("username"),
       createdAt: new Date()
-    };
+    };*/
 
+  const handleCreate = async () => {
+  const newPost = {
+    id: Date.now(), // id único
+    title,
+    content,
+    username: localStorage.getItem("username"),
+    createdAt: new Date()
+  };
+
+  try {
+    // Fake API interaction 
+    await fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newPost)
+    });
+
+    // local update
     setPosts([newPost, ...posts]);
     setTitle("");
     setContent("");
-  };
+
+  } catch (error) {
+    console.error("Error creating post:", error);
+  }
+};
+
+   /* setPosts([newPost, ...posts]);
+    setTitle("");
+    setContent("");
+  };*/
 
   
   /*const handleDelete = (id) => {
