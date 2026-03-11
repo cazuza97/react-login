@@ -1,0 +1,196 @@
+.header{
+  width:800px;
+  height:80px;
+  margin:0 auto;
+  background:#7695EC;
+  color:white;
+  display:flex;
+  align-items:center;
+  padding-left:32px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.main-container{
+  width:800px;
+  margin:0 auto;
+  background:white;
+  padding:20px;
+}
+
+.create-post{
+  width:752px;
+  height:334px;
+  border:1px solid #999;
+  border-radius:16px;
+
+  margin:0 auto;
+  padding:24px;
+
+  display:flex;
+  flex-direction:column;
+}
+
+.create-post h2{
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 0;
+
+  margin-bottom:20px;
+}
+
+.create-post label{
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+
+  margin-top:20px;
+  margin-bottom:8px;
+}
+
+.create-post input{
+  width:704px;
+  height:32px;
+  border:1px solid #999;
+  border-radius:8px;
+
+  padding:0 10px;
+  font-family: Roboto, sans-serif;
+  font-size:14px;
+}
+
+.create-post textarea{
+  width:704px;
+  height:74px;
+  border:1px solid #999;
+  border-radius:8px;
+
+  padding:10px;
+  font-family: Roboto, sans-serif;
+  font-size:14px;
+
+  resize:none;
+}
+
+.create-post button{
+  width:120px;
+  height:32px;
+  border-radius:8px;
+  background:#7695EC;
+  color:white;
+  border:none;
+  align-self:flex-end;
+  margin-top:24px;
+}
+
+.create-post button:disabled{
+  background:#cccccc;
+  cursor:not-allowed;
+}
+
+.post{
+  margin:24px auto;
+  border:1px solid #999;
+  border-radius:16px;
+  overflow:hidden;
+}
+
+.post-header{
+  height:70px;
+  background:#7695EC;
+  border-top-left-radius:16px;
+  border-top-right-radius:16px;
+
+  display:flex;
+  align-items:center;
+  padding-left:24px;
+  color:white;
+}
+
+.post-header {
+  height: 70px;
+  background:#7695EC;
+  border-top-left-radius:16px;
+  border-top-right-radius:16px;
+
+  display:flex;
+  align-items:center;
+  justify-content: space-between; /* título à esquerda, botões à direita */
+  padding: 0 16px;
+  color:white;
+}
+
+.post-actions {
+  display:flex;
+  gap: 12px; /* espaçamento entre os dois botões */
+}
+
+.post-actions button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.post-actions .edit-btn i {
+  font-size: 23px; /* aproximado do 23.4px do Figma */
+  color: white;
+}
+
+.post-actions .delete-btn {
+  width: 31.2px;  /* do Figma */
+  height: 30px;   /* do Figma */
+}
+
+.post-actions .delete-btn i {
+  font-size: 24px;
+  color: white;  
+}
+
+
+.post-content {
+  padding: 20px; /* espaço interno do post */
+}
+
+/* linha do username + timestamp */
+.post-header-row {
+  display: flex;
+  justify-content: space-between; /* username à esquerda, timestamp à direita */
+  align-items: center;
+  margin-bottom: 10px; /* espaço entre header e conteúdo */
+}
+
+/* username */
+.username {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #777777;
+  margin: 0;
+}
+
+/* timestamp */
+.timestamp {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #777777;
+  margin: 0;
+}
+
+/* conteúdo do post */
+.content {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #333333;
+  margin: 0;
+}
